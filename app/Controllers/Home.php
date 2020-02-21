@@ -26,6 +26,9 @@ class Home extends BaseController
         ]);
 	}
 
-	//--------------------------------------------------------------------
-
+	public function jwt()
+	{
+		$jwt = new \Firebase\JWT\JWT();
+		d($jwt);
+	}
 }
