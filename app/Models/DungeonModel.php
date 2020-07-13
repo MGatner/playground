@@ -2,7 +2,7 @@
 
 use CodeIgniter\Model;
 
-class DungeonModel extends Model
+class DungeonModel extends BaseModel
 {
 	protected $table      = 'dungeons';
 	protected $primaryKey = 'id';

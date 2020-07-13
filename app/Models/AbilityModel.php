@@ -2,7 +2,7 @@
 
 use CodeIgniter\Model;
 
-class AbilityModel extends Model
+class AbilityModel extends BaseModel
 {
 	protected $table      = 'abilities';
 	protected $primaryKey = 'id';

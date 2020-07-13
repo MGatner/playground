@@ -2,7 +2,7 @@
 
 use CodeIgniter\Model;
 
-class MonsterModel extends Model
+class MonsterModel extends BaseModel
 {
 	protected $table      = 'monsters';
 	protected $primaryKey = 'id';
@@ -19,4 +19,7 @@ class MonsterModel extends Model
 		'dungeon_id' => 'is_natural_no_zero',
 	];
 	protected $validationMessages = [];
+
+	// Always load associated Abilities
+	protected $with = ['abilities'];
 }

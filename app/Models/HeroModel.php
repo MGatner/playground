@@ -2,7 +2,7 @@
 
 use CodeIgniter\Model;
 
-class HeroModel extends Model
+class HeroModel extends BaseModel
 {
 	protected $table      = 'heroes';
 	protected $primaryKey = 'id';

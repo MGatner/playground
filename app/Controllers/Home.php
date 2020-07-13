@@ -2,6 +2,7 @@
 
 use App\Models\DungeonModel;
 use App\Models\HeroModel;
+use App\Models\MonsterModel;
 
 class Home extends BaseController
 {
@@ -13,6 +14,7 @@ class Home extends BaseController
          // during instantiation.
         $heroes = new HeroModel();
         $dungeons = new DungeonModel();
+        $monsters = new MonsterModel();
 
 		return view('home', [
 		    // Note that we can intermingle builder and model methods
@@ -21,8 +23,10 @@ class Home extends BaseController
                 ->orderBy('name', 'asc')
                 ->findAll(),
             'dungeons' => $dungeons
+            	->with('monsters')
                 ->orderBy('difficulty', 'desc')
                 ->findAll(),
+            'monster' => $monsters->first(),
         ]);
 	}
 

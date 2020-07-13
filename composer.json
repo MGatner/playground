@@ -14,7 +14,8 @@
 	],
 	"require": {
 		"php": ">=7.2",
-		"codeigniter4/codeigniter4": "dev-develop"
+		"codeigniter4/codeigniter4": "dev-develop",
+		"tatter/relations": "^2.0"
 	},
 	"require-dev": {
 		"fzaninotto/faker": "^1.9@dev",

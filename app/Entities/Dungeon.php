@@ -12,8 +12,10 @@ use CodeIgniter\Entity;
  *
  * @package App\Entities
  */
-class Dungeon extends Entity
+class Dungeon extends BaseEntity
 {
+	protected $table = 'dungeons';
+
     // Specifies that we should cast the columns
     // into a certain datatype when accessed.
     // In this case we want integers (not strings)

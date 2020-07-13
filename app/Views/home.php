@@ -63,6 +63,7 @@
                         <th>Name</th>
                         <th>Difficulty</th>
                         <th>Capacity</th>
+                        <th>Monsters</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -72,6 +73,7 @@
                             <td><a href="<?= $dungeon->link() ?>"><?= esc($dungeon->name ?? '') ?></a></td>
                             <td><?= $dungeon->difficulty ?? 0 ?></td>
                             <td><?= $dungeon->capacity ?? 0 ?></td>
+                            <td><?= count($dungeon->monsters) ?></td>
                         </tr>
                     <?php endforeach ?>
                     </tbody>
@@ -81,6 +83,33 @@
                     No Dungeons found.
                 </div>
             <?php endif ?>
+        </div>
+
+        <!-- Monster -->
+        <div class="col">
+            <h2><?= $monster->name ?></h2>
+
+			<h3>Abilities</h3>
+			<table class="table table-striped">
+				<thead>
+				<tr>
+					<th style="width: 3em">ID</th>
+					<th>Name</th>
+					<th>Damage</th>
+					<th>Cooldown</th>
+				</tr>
+				</thead>
+				<tbody>
+				<?php foreach ($monster->abilities as $ability) : ?>
+					<tr>
+						<td><?= $ability->id ?></td>
+						<td><?= $ability->name ?></td>
+						<td><?= $ability->damage ?></td>
+						<td><?= $ability->cooldown ?></td>
+					</tr>
+				<?php endforeach ?>
+				</tbody>
+			</table>
         </div>
     </div>
 <?= $this->endSection() ?>
