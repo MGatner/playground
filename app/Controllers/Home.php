@@ -26,6 +26,11 @@ class Home extends BaseController
         ]);
 	}
 
+	public function restricted()
+	{
+         return view('restricted');
+	}
+
 	//--------------------------------------------------------------------
 
 }

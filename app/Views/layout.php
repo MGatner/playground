@@ -1,4 +1,7 @@
-<!doctype html>
+<?php
+// Make sure the Auth helper is available
+helper('auth');
+?><!doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -15,9 +18,16 @@
 <div class="container">
     <h1>CodeIgniter 4 Playground</h1>
 
+	<nav>
+		<div><?= anchor('/', 'Home') ?></div>
+		<div><?= anchor('home/restricted', 'Restricted') ?></div>
+		<div><?= logged_in() ? anchor('logout', 'Log Out') : anchor('login', 'Log In'); ?></div>
+	</nav>
+
     <br>
 
     <?= $this->renderSection('content') ?>
+    <?= $this->renderSection('main') ?>
 
     <br>
     <hr>

@@ -9,12 +9,12 @@ class Email extends BaseConfig
 	/**
 	 * @var string
 	 */
-	public $fromEmail;
+	public $fromEmail = 'playground-auth@igniter.be';
 
 	/**
 	 * @var string
 	 */
-	public $fromName;
+	public $fromName = 'Playground Auth';
 
 	/**
 	 * @var string
