@@ -14,7 +14,20 @@
 	],
 	"require": {
 		"php": ">=7.2",
-		"codeigniter4/codeigniter4": "dev-develop"
+		"codeigniter4/codeigniter4": "dev-develop",
+		"myth/auth": "dev-develop",
+        "enyo/dropzone": "^5.5",
+		"tatter/alerts": "^2.0",
+		"tatter/assets": "^2.2",
+		"tatter/audits": "^1.0",
+		"tatter/exports": "^2.0",
+		"tatter/permits": "^2.0",
+		"tatter/settings": "^1.0",
+		"tatter/thumbnails": "^1.2",
+        "enyo/dropzone": "^5.7",
+		"twbs/bootstrap": "^4.5",
+		"components/jquery": "^3.3",
+		"fortawesome/font-awesome": "^5.8"
 	},
 	"require-dev": {
 		"fzaninotto/faker": "^1.9@dev",

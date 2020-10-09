@@ -125,3 +125,8 @@ nb-configuration.xml
 /results/
 /phpunit*.xml
 /.phpunit.*.cache
+
+public/assets/vendor
+writable/files
+!writable/files/index.html
+
