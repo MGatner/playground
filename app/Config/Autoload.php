@@ -43,6 +43,7 @@ class Autoload extends AutoloadConfig
 		APP_NAMESPACE => APPPATH, // For custom app namespace
 		'Config'      => APPPATH . 'Config',
 		'Tatter\Files' => '/opt/codeigniter4/files/src',
+		'Tatter\Outbox' => '/opt/codeigniter4/outbox/src',
 	];
 
 	/**

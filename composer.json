@@ -16,7 +16,6 @@
 		"php": ">=7.2",
 		"codeigniter4/codeigniter4": "dev-develop",
 		"myth/auth": "dev-develop",
-        "enyo/dropzone": "^5.5",
 		"tatter/alerts": "^2.0",
 		"tatter/assets": "^2.2",
 		"tatter/audits": "^1.0",
